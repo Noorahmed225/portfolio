@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
-  const [filter, setFilter] = useState('all');
+ const [filter] = useState('all');
 
   const projectsData = allProjectsData;
 

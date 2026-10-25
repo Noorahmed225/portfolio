@@ -245,4 +245,3 @@ const About = () => {
 
 export default About;
 
-{/* #0EA5E9 RGB: 14, 165, 233 Cyan Blue */}
