@@ -1,0 +1,43 @@
+
+/* Rounded blue chips for Skills and Tools */
+.about-skill-chip {
+  background-color: #13A5E9;
+  color: #ffffff;
+  border: 1px solid #13A5E9;
+}
+
+.about-skill-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 13px;
+  border-radius: 999px;
+
+  /* Blue background and white text */
+  background-color: #0284c7;
+  color: #ffffff;
+  border: 1px solid #0284c7;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Mobile responsive design */
+@media (max-width: 640px) {
+  .about-skill-chips {
+    gap: 8px;
+  }
+
+  .about-skill-chip {
+    padding: 6px 11px;
+    font-size: 0.85rem;
+  }
+}

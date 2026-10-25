@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-dark bg-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-8 text-dark;
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-medium py-2 px-4 rounded transition duration-300;
+  }
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-4 rounded transition duration-300;
+  }
+}
+
+
+/* Keep the whole portfolio white and align navigation targets below the fixed navbar. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: #ffffff;
+}
+
+#root main > section[id] {
+  min-height: 100vh;
+  box-sizing: border-box;
+  scroll-margin-top: 64px;
+  background-color: #ffffff;
+}
+
+/* Reduce the empty space between the navbar and each section heading. */
+#root main > section[id] > .section-container {
+  padding-top: 1rem;
+}
